@@ -1,0 +1,72 @@
+/* Miscelaneous */
+input:focus, a:focus { outline: none !important; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.right { float: right; }
+.left { float: left; }
+.txt-right { text-align: right;}
+.txt-left { text-align: left; }
+.txt-center { text-align: center; }
+.clear { clear: both; }
+.uppercase { text-transform: uppercase !important; }
+.lowercase { text-transform: lowercase !important; }
+.normal { text-transform: none; }
+.no-list-style { list-style: none; }
+.thin { font-weight: 100 !important; }
+.light { font-weight: 300 !important; }
+.regular { font-weight: 400 !important; }
+.bold { font-weight: 700; }
+.underline { text-decoration: underline; }
+.sub-title { font-size: 23px !important; }
+.mini-button { width: 86px !important; }
+.medium-buttom { width: 126px !important; }
+.block { display: block; }
+.center { margin: 5px auto 5px auto !important; }
+.transition { -webkit-transition: 0.2s; -moz-transition: 0.2s; -o-transition: 0.2s; -ms-transition: 0.2s; transition: 0.2s; }
+.text-shadow { text-shadow: 1px 1px 2px #616161; }
+.non-text { text-indent: -99999px; }
+.img-responsive {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+/* Rounded corners */
+.rounded-corners (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	-ms-border-radius: @radius;
+	-o-border-radius: @radius;
+	border-radius: @radius;
+}
+.left-top-rounded (@radius: 5px) { border-top-left-radius: @radius; }
+.left-bottom-rounded (@radius: 5px) { border-bottom-left-radius: @radius; }
+.right-top-rounded (@radius: 5px) { border-top-left-radius: @radius; }
+.right-bottom-rounded (@radius: 5px) { border-bottom-left-radius: @radius; }
+
+/* Box shadow */
+.box-shadow (@horizontal, @vertical, @blur, @spread, @color) {
+	-moz-box-shadow:    @horizontal @vertical @blur @spread @color;
+	-webkit-box-shadow: @horizontal @vertical @blur @spread @color;
+	box-shadow:         @horizontal @vertical @blur @spread @color;
+}
+
+/* No margins */
+.no-mt { margin-top: 0 !important; }
+.no-mr { margin-right: 0 !important; }
+.no-mb { margin-bottom: 0 !important; }
+.no-ml { margin-left: 0 !important; }
+.nomargin { margin: 0 !important; }
+
+/* No paddings */
+.no-pt { padding-top: 0 !important; }
+.no-pl { padding-left: 0 !important; }
+.no-pb { padding-bottom: 0 !important; }
+
+/* No borders */
+.no-border { border: 0 !important; }
+.no-bt { border-top: 0 !important; }
+.no-br { border-right: 0 !important; }
+.no-bb { border-bottom: 0 !important; }
+.no-bl { border-left: 0 !important; }
+/********/

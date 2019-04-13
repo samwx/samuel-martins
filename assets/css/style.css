@@ -1,1 +1,451 @@
-/** Enjoy! **/
+/* Miscelaneous */
+input:focus,
+a:focus {
+  outline: none !important;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+.txt-right {
+  text-align: right;
+}
+.txt-left {
+  text-align: left;
+}
+.txt-center {
+  text-align: center;
+}
+.clear {
+  clear: both;
+}
+.uppercase {
+  text-transform: uppercase !important;
+}
+.lowercase {
+  text-transform: lowercase !important;
+}
+.normal {
+  text-transform: none;
+}
+.no-list-style {
+  list-style: none;
+}
+.thin {
+  font-weight: 100 !important;
+}
+.light {
+  font-weight: 300 !important;
+}
+.regular {
+  font-weight: 400 !important;
+}
+.bold {
+  font-weight: 700;
+}
+.underline {
+  text-decoration: underline;
+}
+.sub-title {
+  font-size: 23px !important;
+}
+.mini-button {
+  width: 86px !important;
+}
+.medium-buttom {
+  width: 126px !important;
+}
+.block {
+  display: block;
+}
+.center {
+  margin: 5px auto 5px auto !important;
+}
+.transition {
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+}
+.text-shadow {
+  text-shadow: 1px 1px 2px #616161;
+}
+.non-text {
+  text-indent: -99999px;
+}
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+/* Rounded corners */
+/* Box shadow */
+/* No margins */
+.no-mt {
+  margin-top: 0 !important;
+}
+.no-mr {
+  margin-right: 0 !important;
+}
+.no-mb {
+  margin-bottom: 0 !important;
+}
+.no-ml {
+  margin-left: 0 !important;
+}
+.nomargin {
+  margin: 0 !important;
+}
+/* No paddings */
+.no-pt {
+  padding-top: 0 !important;
+}
+.no-pl {
+  padding-left: 0 !important;
+}
+.no-pb {
+  padding-bottom: 0 !important;
+}
+/* No borders */
+.no-border {
+  border: 0 !important;
+}
+.no-bt {
+  border-top: 0 !important;
+}
+.no-br {
+  border-right: 0 !important;
+}
+.no-bb {
+  border-bottom: 0 !important;
+}
+.no-bl {
+  border-left: 0 !important;
+}
+/********/
+/** Colors **/
+.green {
+  color: #5fb27b;
+}
+.salmon {
+  color: #cd5d5d;
+}
+.light-gray {
+  color: #eaeaea;
+}
+.lead {
+  color: #2d383e;
+}
+.white {
+  color: #f4f4f4;
+}
+/** Font **/
+.oxygen {
+  font-family: 'Oxygen', sans-serif;
+}
+/** Misc **/
+.green-btn {
+  background: #5fb27b;
+  color: #f4f4f4 !important;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 9px 25px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.green-btn:hover {
+  color: #eaeaea;
+  tex-decoration: none;
+}
+/** CSS Loader **/
+.spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 99;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background: rgba(95, 178, 123, 0.7);
+  border-radius: 100%;
+  display: none;
+}
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  margin-top: 88px;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+  animation: bouncedelay 1.4s infinite ease-in-out;
+  /* Prevent first frame from flickering when animation starts */
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+@-webkit-keyframes bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes bouncedelay {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+/** Site style **/
+html,
+body {
+  height: 100%;
+}
+body {
+  background: #f4f4f4;
+  font-family: 'Oxygen', sans-serif;
+}
+#main-header {
+  background: #252e30 url(../img/header-bg.jpg) no-repeat center top;
+  background-size: cover;
+  width: 100%;
+  height: 650px;
+  color: #f4f4f4;
+  text-align: center;
+  overflow: hidden;
+}
+#main-header h1 {
+  font-weight: 400;
+  font-size: 40px;
+}
+#main-header h4 {
+  font-weight: 300;
+  font-size: 19px;
+}
+.sam-infos {
+  margin-top: 150px;
+  position: relative;
+  z-index: 2;
+}
+.me {
+  background: url(../img/me@2x.png) no-repeat center top;
+  background-size: 154px 154px;
+  width: 115px;
+  height: 115px;
+  margin: 0 auto;
+  margin-bottom: 65px;
+  border: 6px solid #f4f4f4;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.social {
+  list-style: none;
+  margin-top: 95px;
+  padding-left: 0;
+}
+.social li {
+  display: inline-block;
+}
+.social li a {
+  width: 50px;
+  height: 50px;
+  color: #eaeaea;
+  display: block;
+  border: 1px solid #eaeaea;
+  margin: 0 14px;
+  padding: 11px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.social li a:hover {
+  color: #5fb27b;
+}
+section.main-description {
+  color: #2d383e;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  padding: 65px 0;
+  line-height: 30px;
+}
+section.main-description a {
+  font-weight: 700;
+  color: #cd5d5d;
+}
+section.main-description a:hover {
+  color: #5fb27b;
+  text-decoration: none;
+}
+section.main-description .green-btn {
+  margin-top: 50px;
+}
+.contact-form {
+  width: 500px;
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  margin-left: -250px;
+  -webkit-transform: scale(0, 0);
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  transform: scale(0, 0);
+}
+.contact-form .form-group {
+  position: relative;
+}
+.contact-form .form-control {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #C3B8B8;
+  box-shadow: none;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  color: #fff;
+  padding: 5px 5px 5px 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.contact-form input.form-control {
+  height: 40px;
+}
+.contact-form label.error {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: 300;
+  color: #E2DCDC;
+}
+.contact-form textarea {
+  height: 200px;
+}
+.contact-form input[type="submit"] {
+  background: #cd5d5d;
+  padding: 7px 25px;
+}
+.contact-form input::-webkit-input-placeholder,
+.contact-form textarea::-webkit-input-placeholder {
+  color: #ddd;
+}
+.contact-form input:-moz-placeholder,
+.contact-form textarea:-moz-placeholder {
+  color: #ddd;
+}
+.contact-form input::-moz-placeholder,
+.contact-form textarea::-moz-placeholder {
+  color: #ddd;
+}
+.contact-form input:-ms-input-placeholder,
+.contact-form textarea:-ms-input-placeholder {
+  color: #ddd;
+}
+.close-btn {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 300;
+  position: absolute;
+  right: 0;
+  top: -35px;
+}
+.close-btn:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+/*****************************/
+/* Responsive adjustments
+/*****************************/
+@media only screen and (max-width: 1024px) {
+  section.main-description {
+    font-size: 20px;
+  }
+}
+/* iPad in Landscape mode */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #main-header {
+    height: 100%;
+  }
+}
+/* iPhones */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  #main-header {
+    height: 100%;
+  }
+  #main-header h1 {
+    font-size: 32px;
+  }
+  #main-header h4 {
+    font-size: 14px;
+  }
+  .sam-infos {
+    margin-top: 50px;
+  }
+  .social {
+    margin-top: 45px;
+  }
+  .social li a {
+    margin: 0 7px;
+  }
+  .contact-form {
+    width: 90%;
+    left: 15px;
+    top: 40px;
+    margin-left: 0;
+    margin: 0 auto;
+  }
+  .contact-form textarea {
+    height: 150px;
+  }
+}
+/* iPhone in landscape mode */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  #main-header {
+    height: 450px;
+  }
+  .close-btn {
+    bottom: 0;
+  }
+}

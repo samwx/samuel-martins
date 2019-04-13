@@ -1,52 +1,111 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
+	<!-- Metas -->
 	<meta charset="UTF-8">
-	<meta name="description" content="Description of website here" />
+	<meta name="description" content="Samuel Martins - Front-end engineer &amp; Back-end developer" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+	<!-- ===== -->
+
 	<!-- Facebook OG Tags -->
-	<meta property="og:image" content="assets/img/gulp.png"/>
-	<meta property="og:title" content="A Front End base for start your project. Gulp ready!"/>
+	<meta property="og:image" content="assets/img/me@2x.png"/>
+	<meta property="og:title" content="Samuel Martins ~ Front-end engineer and Back-end developer"/>
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="http://samwx.github.io/html-skeleton-gulp/"/>
-	<meta property="og:site_name" content="HTML Skeleton - Gulp Version"/>
+	<meta property="og:url" content="http://samuelmartins.me"/>
+	<meta property="og:site_name" content="Samuel Martins"/>
 	<!-- ================ -->
 
-	<title>HTML Skeleton - Gulp</title>
-	<link rel="icon" href="favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" href="assets/dist/all.min.css">
-
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<title>Samuel Martins ~ Front-end engineer and Systems Analyst</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
 
 	<!-- Create HTML 5 elements and fix media queries on Internet Explorer -->
 	<!--[if IE]>
 	<script src="assets/hacks/respond.min.js"></script>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-
 </head>
 <body>
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="jumbotron">
-				<h1>Hello world!</h1>
-				<p>This is <b>HTML-Skeleton</b>, a base structure for front-end project working together with <b><a href="http://gulpjs.com">Gulpjs</a></b>.</p>
-				<p><a href="http://samweb.com.br" target="_blank" class="btn btn-success btn-lg">Visit my website!</a></p>
-			</div>
-
-			<ul class="nav nav-pills text-center">
-				<li><a href="http://twitter.com/samwebdesign" target="_blank">Twitter</a></li>
-				<li><a href="https://plus.google.com/+SamuelMartins/" target="_blank">Google +</a></li>
-				<li><a href="https://github.com/samwx/" target="_blank">Github</a></li>
-			</ul>
-		</div>
-	</div>
+<!-- css spinner loader -->
+<div class="spinner">
+  <div class="bounce1"></div>
+  <div class="bounce2"></div>
+  <div class="bounce3"></div>
 </div>
 
-<script src="assets/dist/concat.min.js"></script>
+<header id="main-header">
+	<div class="container">
+		<div class="row relative">
+			<div class="col-lg-4 col-lg-push-4">
+				<div class="sam-infos">
+					<div class="me animated bounceIn"></div>
 
+					<div class="animated fadeInLeft">
+						<h1><span class="green">{</span> Samuel Martins <span class="green">}</span></h1>
+						<h4>Front-end engineer &amp; Systems Analyst</h4>
+					</div>
+
+					<ul class="social animated bounceIn">
+						<li><a href="https://github.com/samwx" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+						<li><a href="https://twitter.com/samwebdesign" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+						<li><a href="https://plus.google.com/+SamuelMartins/" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a></li>
+						<li><a href="http://br.linkedin.com/pub/samuel-martins/39/8a/887/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+					</ul>
+				</div><!-- /.sam-infos -->
+			</div><!-- /.col-lg-4 -->
+
+			<div class="contact-form">
+				<a href="#" class="close-btn">x</a>
+				<form action="send-mail.php" method="POST" id="main-form" role="form">
+					<div class="form-group">
+						<input type="text" name="user_name" class="form-control" placeholder="Nome">
+					</div>
+
+					<div class="form-group">
+						<input type="text" name="user_email" class="form-control" placeholder="E-mail">
+					</div>
+
+					<div class="form-group">
+						<input type="text" name="user_phone" class="form-control" placeholder="Telefone">
+					</div>
+
+					<div class="form-group">
+						<textarea name="user_msg" class="form-control" placeholder="Mensagem"></textarea>
+					</div>
+
+          <input type="hidden" name="send" value="">
+
+					<div class="form-group">
+						<input type="submit" class="btn send-btn pull-right" value="Enviar">
+					</div>
+				</form>
+
+				<p id="mail-msg" style="margin:0"><!-- callback --></p>
+			</div><!-- /.contact-form -->
+		</div><!-- /.row -->
+	</div><!-- /.container -->
+</header><!-- /.main-header -->
+
+<section class="main-description">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-lg-push-3 col-md-10 col-md-push-1">
+				Olá! Meu nome é Samuel, sou analista de sistemas na <a href="http://take.net">Take.net</a>, atuando com ênfase em sistemas front-end. Também sou formado em Sistemas de Informação pela PUC Minas.
+
+				<div class="clearfix"></div>
+
+				<a href="#" class="green-btn open-form">Envie-me um email</a>
+			</div>
+		</div><!-- /.row -->
+	</div><!-- /.container -->
+</section><!-- /.main-description -->
+<script async src="assets/dist/concat.min.js"></script>
+<script id="loadcss">
+  function loadCSS(e,n,o,t){"use strict";var d=window.document.createElement("link"),i=n||window.document.getElementsByTagName("script")[0],r=window.document.styleSheets;return d.rel="stylesheet",d.href=e,d.media="only x",t&&(d.onload=t),i.parentNode.insertBefore(d,i),d.onloadcssdefined=function(e){for(var n,o=0;o<r.length;o++)r[o].href&&r[o].href===d.href&&(n=!0);n?e():setTimeout(function(){d.onloadcssdefined(e)})},d.onloadcssdefined(function(){d.media=o||"all"}),d}
+  // load a file
+  loadCSS( "assets/dist/all.min.css", document.getElementById("loadcss") );
+  loadCSS( "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css", document.getElementById("loadcss") );
+  loadCSS( "http://fonts.googleapis.com/css?family=Oxygen:400,700,300", document.getElementById("loadcss") );
+</script>
 </body>
 </html>
